@@ -1,0 +1,20 @@
+.waterPage {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.registerPageRight {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .waterPage {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .registerPageRight {
+    display: block;
+  }
+}

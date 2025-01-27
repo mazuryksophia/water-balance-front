@@ -1,0 +1,171 @@
+.registerComponent {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.registerTitle {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--color-font-main);
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.registerLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  color: var(--color-font-second);
+}
+
+.registerInput {
+  border: var(--border-form);
+  border-radius: 15px;
+  background-color: transparent;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--color-font-second);
+
+  width: 100%;
+  outline: none;
+}
+
+.registerInput:focus {
+  border: var(--form-input-focus);
+}
+
+.registerInputError {
+  border: var(--border-form-error);
+  border-radius: 15px;
+  background-color: transparent;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--color-form-error);
+  width: 100%;
+  outline: none;
+}
+
+.registerErrorMessage {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  color: var(--color-form-error);
+}
+
+.registerPassword {
+  position: relative;
+}
+
+.passwordIconBtn {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+}
+
+.passwordIcon {
+  width: 20px;
+  height: 20px;
+  fill: transparent;
+  stroke: var(--color-font-second);
+}
+
+.registerButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.registerBtn {
+  border-radius: 30px;
+  border: none;
+  padding: 16px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  color: var(--color-font-main);
+  background-color: var(--color-second-bg);
+}
+
+.registerBtn:hover,
+.registerBtn:focus {
+  background-color: var(--color-second-bg-hover);
+}
+
+@media screen and (min-width: 768px) {
+  .registerComponent {
+    width: 436px;
+  }
+
+  .registerTitle {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .registerForm {
+    gap: 20px;
+  }
+
+  .registerLabel {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .registerInput {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .registerInputError {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .registerErrorMessage {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .registerButtonsContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .registerBtn {
+    padding: 18px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

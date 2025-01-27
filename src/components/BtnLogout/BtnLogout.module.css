@@ -1,0 +1,30 @@
+.btnLogout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: none;
+  padding: 14px 129px;
+  width: 304px;
+  height: 46px;
+  background-color: var(--color-second-bg);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.01em;
+  color: var(--color-font-main);
+  white-space: nowrap;
+}
+
+.btnLogout:hover {
+  background: var(--color-second-bg-hover);
+}
+
+@media screen and (min-width: 768px) {
+  .btnLogout {
+    padding: 18px 59px;
+    width: 173px;
+    height: 60px;
+  }
+}

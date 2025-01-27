@@ -1,0 +1,47 @@
+.errorMessage {
+  margin-top: 10px;
+  text-align: center;
+  opacity: 0.7;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    min-width: 196px;
+    background-color: var(--color-main-bg);
+  }
+
+  .calendarList {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: repeat(7, 28px);
+    column-gap: calc((100% - 196px) / 6);
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container {
+    min-height: 100px;
+    background-color: var(--color-main-bg);
+  }
+
+  .calendarList {
+    display: grid;
+    grid-template-columns: repeat(8, calc((100% - 301px) / 8));
+    row-gap: 15px;
+    column-gap: 43px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    height: 305px;
+    background-color: var(--color-main-bg);
+  }
+
+  .calendarList {
+    display: grid;
+    grid-template-columns: repeat(8, calc((100% - 301px) / 8));
+    row-gap: 15px;
+    column-gap: 43px;
+  }
+}

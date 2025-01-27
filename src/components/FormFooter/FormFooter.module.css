@@ -1,0 +1,23 @@
+.formFooter {
+  color: var(--color-font-secondary);
+  text-align: center;
+}
+
+.formFooterLink {
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--color-font-main);
+  display: inline-block;
+  margin-left: 12px;
+  border-radius: 15px;
+  padding: 2px 10px;
+  transition:
+    color var(--transition-color),
+    text-decoration-color var(--transition-color);
+}
+
+.formFooterLink:hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
+  background-color: var(--color-second-bg-hover);
+}

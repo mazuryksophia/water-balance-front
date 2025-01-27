@@ -1,0 +1,45 @@
+.userPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.userPanelTitle {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-wrap: nowrap;
+}
+
+.userPanelTitleName {
+  display: inline-block;
+  font-weight: 600;
+  white-space: nowrap;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .userPanel {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+  }
+
+  .userPanelTitle {
+    font-size: 32px;
+    line-height: 1.06;
+  }
+
+  .userPanelTitleName {
+    max-width: 290px;
+  }
+}

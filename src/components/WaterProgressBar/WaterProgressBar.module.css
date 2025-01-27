@@ -1,0 +1,137 @@
+.progressBarContainer {
+  position: absolute;
+  width: 203px;
+  height: 100px;
+  padding: 12px;
+  border-radius: 15px;
+  margin-top: 200px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progressBarTitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--color-font-main);
+}
+
+.progressBar {
+  border-radius: 9px;
+  width: 100%;
+  height: 6px;
+  margin-top: 23px;
+  background-color: var(--color-bg-hover);
+}
+
+.progressBarFill {
+  border-radius: 9px;
+  height: 6px;
+  margin-top: 15px;
+  max-width: 100%;
+  position: relative;
+  transition: ease 1s;
+}
+
+.belowAim {
+  background-color: var(--color-btn);
+  color: var(--color-btn);
+  border: solid 2px var(--color-btn);
+}
+
+.aboveAim {
+  background-color: var(--color-aim);
+  color: var(--color-aim);
+  border: solid 2px var(--color-aim);
+}
+
+.belowAimRate {
+  color: var(--color-accent);
+}
+
+.aboveAimRate {
+  color: var(--color-aim);
+}
+
+.ball {
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.percentNumber {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 100%;
+  position: absolute;
+  bottom: 130%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.percentContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  height: 6px;
+}
+
+.percent {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  color: var(--color-font-secondary);
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .progressBarContainer {
+    width: 295px;
+    height: 116px;
+    padding: 20px;
+    margin-top: 310px;
+  }
+
+  .progressBar {
+    height: 8px;
+  }
+
+  .percentContainer {
+    width: 260px;
+  }
+
+  .percent {
+    font-size: 12px;
+    line-height: 187%;
+    margin-top: 6px;
+  }
+
+  .percentNumber {
+    font-size: 12px;
+    line-height: 140%;
+    bottom: 20%;
+  }
+
+  .progressBarFill {
+    height: 8px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .progressBarContainer {
+    height: 120px;
+    margin-top: 440px;
+  }
+
+  .progressBarTitle {
+    font-size: 15px;
+    line-height: 149%;
+  }
+}

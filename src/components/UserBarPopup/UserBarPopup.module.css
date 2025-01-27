@@ -1,0 +1,58 @@
+.userBarPopup {
+  position: absolute;
+  width: 100%;
+  margin-top: 6px;
+  padding: 14px 0;
+  border-radius: 15px;
+  background-color: var(--white);
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.49;
+  font-weight: 700;
+  z-index: 11;
+  overflow: hidden;
+}
+
+.userBarPopupList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.userBarPopupListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 4px 0;
+  color: var(--color-second-bg-hover);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-bg-hover);
+    color: var(--color-font-main);
+
+    .userBarPopupIcon {
+      stroke: var(--color-font-main);
+      fill: none;
+      transition:
+        stroke 0.3s ease,
+        fill 0.3s ease;
+    }
+  }
+}
+
+.userBarPopupIcon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: var(--color-second-bg-hover);
+  transition:
+    stroke 0.3s ease,
+    fill 0.3s ease;
+}

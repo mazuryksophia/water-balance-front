@@ -1,0 +1,14 @@
+.noData {
+  font-size: 24px;
+  font-weight: bold;
+  color: #989c9d;
+  text-align: center;
+}
+.graphContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  height: 281px;
+}

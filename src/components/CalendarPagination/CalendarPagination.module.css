@@ -1,0 +1,241 @@
+.btn {
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.4);
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+.btnDisabled {
+  opacity: 0.5;
+}
+
+.svgSchedule,
+.svgPie {
+  width: 20px;
+  height: 20px;
+}
+
+.svgPie {
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 767px) {
+  .calendarTitle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 196px;
+    min-height: 24px;
+    max-height: 56px;
+    margin-bottom: 24px;
+    padding-right: 0;
+  }
+
+  .month {
+    width: 109px;
+    color: var(--color-font-main);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .monthInd {
+    display: flex;
+    align-items: center;
+    width: 194px;
+    height: 18px;
+    background-color: var(--color-main-bg);
+    padding: 3px 0;
+    font-size: 14px;
+    margin-left: auto;
+  }
+
+  .btn {
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-main-bg);
+    border: none;
+    cursor: pointer;
+  }
+
+  .monthYear {
+    width: 126px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .statisticBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+
+  .svgArrowLeft,
+  .svgArrowRight {
+    stroke: var(--color-font-main);
+    fill: var(--color-main-bg);
+    width: 7px;
+    height: 14px;
+  }
+
+  .svgArrowRight {
+    transform: rotate(180deg);
+  }
+
+  .isHidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .calendarTitle {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .month {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .btn {
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-main-bg);
+    border: none;
+    cursor: pointer;
+  }
+
+  .monthInd {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-main-bg);
+    width: 224px;
+    height: 24px;
+    padding: 3px 0;
+    font-size: 14px;
+    margin-left: auto;
+  }
+
+  .monthYear {
+    width: 140px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .statisticBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .svgArrowLeft,
+  .svgArrowRight {
+    stroke: var(--color-font-main);
+    fill: var(--color-main-bg);
+    width: 7px;
+    height: 14px;
+  }
+
+  .svgArrowRight {
+    transform: rotate(180deg);
+  }
+
+  .isHidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .calendarTitle {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .month {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .btn {
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-main-bg);
+    border: none;
+    cursor: pointer;
+  }
+
+  .monthInd {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-main-bg);
+    width: 224px;
+    height: 24px;
+    padding: 3px 0;
+    font-size: 14px;
+    margin-left: auto;
+  }
+
+  .monthYear {
+    width: 140px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .statisticBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+    cursor: pointer;
+  }
+
+  .svgArrowLeft,
+  .svgArrowRight {
+    stroke: var(--color-font-main);
+    fill: var(--color-main-bg);
+    width: 7px;
+    height: 14px;
+  }
+
+  .svgArrowRight {
+    transform: rotate(180deg);
+  }
+
+  .isHidden {
+    display: none;
+  }
+}

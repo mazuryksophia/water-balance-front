@@ -1,0 +1,19 @@
+.registerPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.registerPageRight {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .registerPage {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .registerPageRight {
+    display: block;
+  }
+}
